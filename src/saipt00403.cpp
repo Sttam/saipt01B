@@ -30,8 +30,5 @@ int main () {
 
 template<typename T>
 void f(T& param){
-  param *= 2;
-
   std::cout << "function void f(const T& param) : " << param << std::endl;
-
 }

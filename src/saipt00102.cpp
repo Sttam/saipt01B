@@ -12,7 +12,7 @@
                        3. run ./saipt00102 | grep saipt >temp.txt
 
    Quiz yourself  :
-                      1.  Line 2 is an express. Remember the return in saipt00101
+                      1.  Line 2 is an expression. That is the reason why we are writing return EXIT_SUCCESS 
                       2.  What is the compiler doing with the expression
                       3.  What is the output of the program
                       4.  What is the output of the program if run ./saipt00102 & why?

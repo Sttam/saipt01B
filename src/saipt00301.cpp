@@ -25,6 +25,7 @@ class Rectangle {
          return rect_area;
     };
     friend std::ostream& operator<<( std::ostream &os, const Rectangle&  rect );
+    //friend int operator<<( std::ostream &os, const Rectangle&  rect );
 };
 
 std::ostream& operator<<( std::ostream &os, const Rectangle &rect ){
@@ -32,10 +33,17 @@ std::ostream& operator<<( std::ostream &os, const Rectangle &rect ){
          return os;
 
 }
+/*
+
+int operator<<( std::ostream &os, const Rectangle &rect ){
+         os << "Width : " << rect.m_width << " Height : " << rect.m_height << std::endl;
+         return 1;
+}
+*/
 
 int main () {
   Rectangle rect( 3,4);
   rect.area();
-  std::cout << rect;
+  std::cout << "Details of the rectange " << rect << " Just Checking .... Connected end to end" << std::endl;
   return 0;
 }

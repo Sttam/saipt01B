@@ -4,12 +4,17 @@
    Author  : Matts
 
 
-   Purpose :  Variation from saipt00401.cpp
+   Purpose : 
+         Without a solid understanding of how type deduction operates, 
+         effective programming in modern C++ is all but impossible. 
 
-             function f is going to modify the value of the parameter.
-             it should not compile.
+         Here we are telling the compiler that our function should treat the variable passed to the function
+         as constant reference. 
+         template<typename T> void f(const T& param);
 
-             //param *= 2; please uncomment the line and recompile it.
+         So when we implement the functions, the policy should be followed. That is the job of the compile.
+
+         if that is violated. It is an error.
 
          Learning : - 
 
@@ -17,30 +22,52 @@
             2. What is the role of compiler.
             3. Many times experts assume the listeners are at their level of understanding.
             4. Once you understand the concept we move to next step.
-         
-            5. It is dynamically generating the function and made available to linking if everything 
-               goes as planned.
-            6. template<typename T> void f(const T& param); Compiler enforces integrity. The 
-               function is checked for interity.
 
 */
 
 #include <iostream>
+/*
+
+   /home/matts/cpp/saipt01B/src/saipt00402.cpp:39:6: error: call of overloaded ‘f(int&)’ is ambiguous
+   39 |   f(i);
+  
+
+*/
+//template<typename T> void f(T param);
+template<typename T> void f(T& param);
 template<typename T> void f(const T& param);
 
 int main () {
-  double fraction = 10.2340;
 
-  int  x1{10};
+  int i{1001};
+  int &ir{i};
+  const int &cir{i};
 
-  f(x1);
+  f(i);
+  f(ir);
+  f(cir);
   return EXIT_SUCCESS;
 }
 
 template<typename T>
+void f(T param){
+
+  std::cout << "function void f(T param) : " << param  << std::endl;
+
+}
+
+template<typename T>
+void f(T& param){
+
+  std::cout << "function void f(T& param) : " << param << std::endl;
+
+}
+
+template<typename T>
 void f(const T& param){
-  //param *= 2;
 
   std::cout << "function void f(const T& param) : " << param << std::endl;
 
 }
+
+

@@ -5,41 +5,44 @@
 
 
    Purpose : 
-         Without a solid understanding of how type deduction operates, 
-         effective programming in modern C++ is all but impossible. 
-
-         Here we are telling the compiler that our function should treat the variable passed to the function
-         as constant reference. 
-         template<typename T> void f(const T& param);
-
-         So when we implement the functions, the policy should be followed. That is the job of the compile.
-
-         if that is violated. It is an error.
-
+         Understanding of how type declarations operates., 
          Learning : - 
 
             1. Templates are confusing. So understand what is purpose.
-            2. What is the role of compiler.
-            3. Many times experts assume the listeners are at their level of understanding.
-            4. Once you understand the concept we move to next step.
 
 */
 
 #include <iostream>
-template<typename T> void f(const T& param);
+
+const int GLOBAL_INDEX{101};  // GLOBAL_INDEX will not change ever from this point.
+                              // instead of typedef it is recommended to use const int.
+                              // Compiler could optimize the implementation.
 
 int main () {
-  double fraction = 10.2340;
 
-  int  x1{10};
+  int  i{1020};
+  //int &ir; 
+  /*
+  
+           int &ir; 
 
-  f(x1);
+           //error: ‘ir’ declared as reference but not initialized 
+           In the C++ programming language, a reference is a simple reference datatype that is less powerful 
+           but safer than the pointer type inherited from C. The name C++ reference may cause confusion, 
+           as in computer science a reference is a general concept datatype, with pointers and 
+           C++ references being specific reference datatype implementations. The definition of a reference 
+           in C++ is such that it does not need to exist. It can be implemented as a new name for an 
+           existing object (similar to rename keyword in Ada).
+
+*/
+int x{ 5 }; // normal integer
+int &y{ x }; // y is a reference to x
+int &z{ y }; // z is also a reference to x
+
+z= 100;
+const int &ci = x;
+//ci = 100; //error: assignment of read-only reference ‘ci’
+
   return EXIT_SUCCESS;
 }
 
-template<typename T>
-void f(const T& param){
-
-  std::cout << "function void f(const T& param) : " << param << std::endl;
-
-}

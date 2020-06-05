@@ -54,5 +54,3 @@ void f(const T& param){
   std::cout << "function void f(const T& param) : " << param << std::endl;
 
 }
-
-

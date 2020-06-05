@@ -7,17 +7,17 @@
 
    Instructions   : 
                        ......
-                       1. run ./saipt00102
-                       2. run ./saipt00102 | grep saipt 
-                       3. run ./saipt00102 | grep saipt >temp.txt
+                       1. run ./s01B00102
+                       2. run ./s01B00102 | grep saipt 
+                       3. run ./s01B00102 | grep saipt >temp.txt
 
    Quiz yourself  :
                       1.  Line 2 is an expression. That is the reason why we are writing return EXIT_SUCCESS 
                       2.  What is the compiler doing with the expression
                       3.  What is the output of the program
-                      4.  What is the output of the program if run ./saipt00102 & why?
-                      5.  What is the output of the program if run ./saipt00102 | grep saipt
-                      6.  What is the output of the program if run ./saipt00102 | grep saipt >temp.txt
+                      4.  What is the output of the program if run ./s01B00102 & why?
+                      5.  What is the output of the program if run ./s01B00102 | grep saipt
+                      6.  What is the output of the program if run ./s01B00102 | grep saipt >temp.txt
                       7.  What happened to the stdin and stdout?
   
                       :) There could be more questions. Let us limit it here.

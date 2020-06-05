@@ -17,9 +17,6 @@ message("Running the program fr ${COMPANY}")
 set(BUILD_SHARED_LIBS YES)
 message("Building the shared Library : ${BUILD_SHARED_LIBS}")
 
-# saipt001_01 - First Hello World to see all the setups are good to go
-# explains the elments of programming  
-
 set( MY_SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/src" )
 set( MY_INC_DIR    "${CMAKE_CURRENT_LIST_DIR}/inc" )
 
@@ -28,29 +25,12 @@ message("Setting include director to      : ${MY_INC_DIR}")
 
 include_directories(${MY_INC_DIR})
 
-add_executable(saipt00101 
-        ${MY_SOURCE_DIR}/saipt00101.cpp
-)
-add_executable(saipt00102 
-        ${MY_SOURCE_DIR}/saipt00102.cpp
-)
-add_executable(saipt00103 
-        ${MY_SOURCE_DIR}/saipt00103.cpp
-)
-
-add_executable(saipt00201 
-        ${MY_SOURCE_DIR}/saipt00201.cpp
-)
-# Class Example. No Constructor is provided.
-add_executable(saipt00301 
-        ${MY_SOURCE_DIR}/saipt00301.cpp
-)
-add_executable(saipt00401 
-        ${MY_SOURCE_DIR}/saipt00401.cpp
-)
-add_executable(saipt00402 
-        ${MY_SOURCE_DIR}/saipt00402.cpp
-)
-add_executable(saipt00403 
-        ${MY_SOURCE_DIR}/saipt00403.cpp
+add_executable(s01B00101 ${MY_SOURCE_DIR}/s01B00101.cpp)
+add_executable(s01B00102 ${MY_SOURCE_DIR}/s01B00102.cpp)
+add_executable(s01B00103 ${MY_SOURCE_DIR}/s01B00103.cpp)
+add_executable(s01B00201 ${MY_SOURCE_DIR}/s01B00201.cpp)
+add_executable(s01B00301 ${MY_SOURCE_DIR}/s01B00301.cpp)
+add_executable(s01B00401 ${MY_SOURCE_DIR}/s01B00401.cpp)
+add_executable(s01B00402 ${MY_SOURCE_DIR}/s01B00402.cpp)
+add_executable(s01B00403 ${MY_SOURCE_DIR}/s01B00403.cpp
 )

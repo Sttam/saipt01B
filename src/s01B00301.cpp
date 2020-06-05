@@ -24,22 +24,16 @@ class Rectangle {
          std::cout << "area: " << rect_area << std::endl;
          return rect_area;
     };
-    friend std::ostream& operator<<( std::ostream &os, const Rectangle&  rect );
-    //friend int operator<<( std::ostream &os, const Rectangle&  rect );
+    friend std::ostream& operator<<( std::ostream &os, const Rectangle  &rect );
 };
+
 
 std::ostream& operator<<( std::ostream &os, const Rectangle &rect ){
          os << "Width : " << rect.m_width << " Height : " << rect.m_height << std::endl;
          return os;
 
 }
-/*
 
-int operator<<( std::ostream &os, const Rectangle &rect ){
-         os << "Width : " << rect.m_width << " Height : " << rect.m_height << std::endl;
-         return 1;
-}
-*/
 
 int main () {
   Rectangle rect( 3,4);

@@ -25,12 +25,12 @@ message("Setting include director to      : ${MY_INC_DIR}")
 
 include_directories(${MY_INC_DIR})
 
-add_executable(s01B00101 ${MY_SOURCE_DIR}/s01B00101.cpp)
-add_executable(s01B00102 ${MY_SOURCE_DIR}/s01B00102.cpp)
-add_executable(s01B00103 ${MY_SOURCE_DIR}/s01B00103.cpp)
-add_executable(s01B00201 ${MY_SOURCE_DIR}/s01B00201.cpp)
-add_executable(s01B00301 ${MY_SOURCE_DIR}/s01B00301.cpp)
-add_executable(s01B00401 ${MY_SOURCE_DIR}/s01B00401.cpp)
-add_executable(s01B00402 ${MY_SOURCE_DIR}/s01B00402.cpp)
-add_executable(s01B00403 ${MY_SOURCE_DIR}/s01B00403.cpp
+add_executable(s01B00101 ${MY_SOURCE_DIR}/s01b00101.cpp)
+add_executable(s01B00102 ${MY_SOURCE_DIR}/s01b00102.cpp)
+add_executable(s01B00103 ${MY_SOURCE_DIR}/s01b00103.cpp)
+add_executable(s01B00201 ${MY_SOURCE_DIR}/s01b00201.cpp)
+add_executable(s01B00301 ${MY_SOURCE_DIR}/s01b00301.cpp)
+add_executable(s01B00401 ${MY_SOURCE_DIR}/s01b00401.cpp)
+add_executable(s01B00402 ${MY_SOURCE_DIR}/s01b00402.cpp)
+add_executable(s01B00403 ${MY_SOURCE_DIR}/s01b00403.cpp
 )

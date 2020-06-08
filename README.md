@@ -1,6 +1,6 @@
 saipt01B
 
-Sense AI Private Limited T01 Beginners
+Sense AI Private Limited s01 - C++ Training
 
 Series of examples were provided to start a chain of thoughts. 
 

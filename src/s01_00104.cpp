@@ -4,13 +4,13 @@
    Date           : 2020/05/26
    Author         : Matts
 
-   Purpose        : Checking to see the environment, compiler, cmake works for you.
+   Purpose        : give an understanding about the shell and OS dealing with you.
 
    Instructions   : 
                        ......
-                       1. run ./s01B00103
-                       2. run ./s01B00103 | grep saipt 
-                       3. run ./s01B00103 | grep saipt >temp.txt
+                       1. run ./s01_00103
+                       2. run ./s01_00103 | grep saipt 
+                       3. run ./s01_00103 | grep saipt >temp.txt
 
    Quiz yourself  :
                       1.  Line 2 is an expression. That is the reason why we are writing return EXIT_SUCCESS 
@@ -29,7 +29,7 @@
 
 int main( int argc, char* argv[], char *envp[]){
 
-    ( 20 * 30 * 40 );
+    ( 20 * 30 * 40 ); //An expression 
 
     std::cout << "\nCommand-line arguments:\n";
 

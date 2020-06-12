@@ -8,10 +8,10 @@
    Purpose        : Checking to see the environment, compiler, cmake works for you.
 
    Instructions   : 
-                       1. go to the saipt01B/build 
+                       1. go to the saipt01s/build 
                        2. run cmake ../
                        3. run cmake --build ./
-                       4. run ./s01B00101
+                       4. run ./s01_00101
 
    Quiz yourself  :
                       1.  Where is the external variable std::cout declared

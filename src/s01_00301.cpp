@@ -6,6 +6,9 @@
 
 
    Purpose : To demonstrate a simple class.
+             Here we define a friend to ease our task
+             and a tip of the iceberg( capabilities of C++).
+
 
 */
 

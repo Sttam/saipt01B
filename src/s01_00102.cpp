@@ -8,11 +8,10 @@
 
    Instructions   : 
                        ......
-                       1. run ./s01B00102
+                       1. run ./s01_00102
 
    Quiz yourself  :
                       :) I will ask you when I take the class
-  
                       :) There could be more questions. Let us limit it here.
 
 */

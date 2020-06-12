@@ -14,7 +14,8 @@
                       1.  How do you solve it
                       2.  Give one way to solve it.
                       3.  Give one more way to solve it.
-  
+                      4.  Give a loop to find it. // What is the issue with it?
+
                       :) Ask yourself is the solution right
 */
 

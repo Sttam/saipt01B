@@ -21,6 +21,8 @@
 int return_magic();
 
 int main( int argc, char* argv[], char *envp[]){
+   
+    auto x = return_magic();
 
 
     return EXIT_SUCCESS;

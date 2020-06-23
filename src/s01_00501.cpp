@@ -41,7 +41,10 @@ int main(){
     return EXIT_SUCCESS;
 }
 void WriteSong( char s[] ){
-    strncpy( s, "Padmatherthathile Pathiviringa pavazhathamara ayirunnu ", buf_max_len );    
+    strncpy( s, "Almost heaven, West Virginia \n"
+                "Blue Ridge Mountains, Shenandoah River\n"
+                "Life is old there, older than the trees\n"
+                "Younger than the mountains, growin' like a breeze\n", buf_max_len );    
 }   
 
 void ReadSong( const char s[] ){

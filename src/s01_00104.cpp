@@ -37,5 +37,10 @@ int main( int argc, char* argv[], char *envp[]){
          std::cout << "  argv[" << count << "]   " << argv[count] << "\n";
     std::cout << "\n";
 
+    while( *envp++ )
+         std::cout <<   *envp    << "\n";
+    std::cout << "\n";
+
+
     return EXIT_SUCCESS;
 }

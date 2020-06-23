@@ -26,17 +26,7 @@ int main( int argc, char* argv[], char *envp[]){
 
 
     std::cout << "\nYour turn to solve it :)\n";
-     int i = 0;
-     while (x <= (i+4) ){
-        
-
-     }
 
      
-
-    f( x & 3 ){
-    } 
-    f( (x>>2) << 2) == x  ){
-
     return EXIT_SUCCESS;
 }

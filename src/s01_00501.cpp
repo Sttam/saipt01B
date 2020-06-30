@@ -49,7 +49,6 @@ void WriteSong( char s[] ){
 
 void ReadSong( const char s[] ){
 
-    auto i{0};
-    while( i++ < buf_max_len );
-            s[i];
+    for( auto i{0}; i++ < buf_max_len; )
+         s[i];
 }   

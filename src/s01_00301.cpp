@@ -13,11 +13,13 @@
 */
 
 #include <iostream>
+using namespace std;
 
 class Rectangle {
 
     int m_width{0};
     int m_height{0};
+    double m_dheight{0};
 
   public:
 
@@ -43,5 +45,11 @@ int main () {
   Rectangle rect( 3,4);
   rect.area();
   std::cout << "Details of the rectange " << rect << " Just Checking .... Connected end to end" << std::endl;
+ 
+
+    size_t size_r1 = sizeof( rect );
+
+    cout << "size of rect  " << size_r1 << endl;
+
   return 0;
 }

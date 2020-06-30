@@ -22,7 +22,7 @@ const int GLOBAL_INDEX{101};  // GLOBAL_INDEX will not change ever from this poi
 int main () {
 
   int  i{1020};
-  //int &ir; 
+  int &ir{i}; 
   /*
   
            int &ir; 

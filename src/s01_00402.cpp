@@ -40,7 +40,7 @@ template<typename T> void f(const T& param);
 
 int main () {
 
-  int i{1001};
+  int i = 1001;
   int &ir{i};
   const int &cir{i};
 
